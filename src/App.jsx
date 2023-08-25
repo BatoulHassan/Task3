@@ -24,7 +24,7 @@ function App() {
 	return (
 		<div className="App">
 			
-			 <Router>
+			 <Router basename={import.meta.env.DEV ? '/' : '/Task3/'}>
 				<NavBar />
 			    <Routes>
 				   <Route path="/" element={<Homepage />} />
